@@ -11,25 +11,36 @@
 </head>
 <body class="bg-violet-950 m-0 p-0 overflow-x-hidden font-[Roboto]">
     <!--header-->
-    <header class="w-full h-16 backdrop-blur-3xl rounded-b-full flex justify-between px-12 items-center drop-shadow-2xl sticky top-0 z-50">
+    <header class="w-full h-16 backdrop-blur-3xl md:rounded-b-full flex justify-evenly md:justify-between md:px-12 items-center drop-shadow-2xl top-0 z-50 relative sticky">
         <img src="https://nestmoodle.xyz/pluginfile.php/1/core_admin/logo/0x150/1714348331/NHS.d046134c.png" alt="" class="h-12">
-        <div class="w-1/3 h-full flex justify-between items-center">
+        <!--Mobile buttons-->
+        <button id="hmbrgr" class="md:hidden">
+            <img src="https://cdn2.iconfinder.com/data/icons/basic-ui-color/35/Menu-512.png" alt="" class="h-10">
+        </button>
+        <div class="w-1/3 h-full justify-between items-center hidden md:flex">
             <p class="font-normal text-slate-500 text-md uppercase select-none">class 10b</p>
             <a href="#about"><p class="font-normal text-slate-400 text-md uppercase hover:text-slate-500 transition ease-in-out delay-50 duration-300">about us</p></a>
             <a href="#students"><p class="font-normal text-slate-400 text-md uppercase hover:text-slate-500 transition ease-in-out delay-50 duration-300">students</p></a>
             <a href="#achievements"><p class="font-normal text-slate-400 text-md uppercase hover:text-slate-500 transition ease-in-out delay-50 duration-300">achievements</p></a>
         </div>
+        <!--Mobile dropdown-->
+        <div id="dropdown" class="w-full h-48 backdrop-blur-3xl absolute top-16 flex flex-col justify-evenly items-center text-slate-400 uppercase md:hidden">
+            <p class="text-slate-500">class 10b</p>
+            <a href="#about"><p>about us</p></a>
+            <a href="#students"><p>students</p></a>
+            <a href="#achievements"><p>achievements</p></a>
+        </div>
     </header>
     <main>
         <!--intro-->
-        <section class="w-screen h-screen bg-gradient-to-b from-violet-950 to-blue-950 flex justify-center items-end">
-            <div class="w-8/12 h-5/6 rounded-3xl bg-gradient-to-tl from-purple-950 via-sky-950 to-blue-950 p-[3px]">
+        <section class="w-screen h-[500px] md:h-screen bg-gradient-to-b from-violet-950 to-blue-950 flex justify-center items-center">
+            <div class="w-10/12 h-5/6 md:w-8/12 rounded-3xl bg-gradient-to-tl from-purple-950 via-sky-950 to-blue-950 p-[3px]">
                 <div class="w-full h-full bg-slate-900 rounded-3xl">
                     <div class="w-full h-[10%] flex justify-center items-end">
-                        <p class="font-bold text-4xl bg-gradient-to-b from-purple-700 to-blue-700 text-transparent bg-clip-text uppercase select-none">танилцуулга</p>
+                        <p class="font-bold text-3xl md:text-4xl bg-gradient-to-b from-purple-700 to-blue-700 text-transparent bg-clip-text uppercase select-none">танилцуулга</p>
                     </div>
                     <div class="w-full h-[90%] flex justify-center items-center">
-                        <video autoplay controls muted loop src="media/costume.mp4" class="h-[95%] rounded-3xl"></video>
+                        <video autoplay controls muted loop src="students/media/costume.mp4" class="h-[95%] rounded-3xl"></video>
                     </div>
                 </div>
             </div>
@@ -40,7 +51,7 @@
         </section>
         <!--text-->
         <section class="bg-blue-950 w-screen h-72">
-            <p class="px-40 pt-20 text-white text-2xl font-light text-slate-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p class="px-12 md:px-40 pt-20 text-white text-lg md:text-2xl font-light text-slate-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         </section>
         <!--students-->
         <section class="bg-blue-950 w-screen h-48 flex justify-center items-end z-0">
@@ -51,20 +62,20 @@
             <div class="w-11/12 h-[60%] flex sticky overflow-x-scroll mt-20 hide-scroll-bar snap-x">
                 <!--Ariunbayar-->
                 <div class="inline-block px-4 scroll-ml-0 snap-start">
-                    <div class="w-64 h-72 border-[2px] border-slate-700 rounded-3xl flex flex-col justify-around items-center hover:border-slate-400 transition ease-in-out duration-300 delay-50">
+                    <div class="w-64 h-72 border-[2px] border-slate-700 rounded-3xl flex flex-col justify-around items-center hover:bg-white/[0.05] hover:bg-white/[0.05] hover:border-slate-400 transition ease-in-out duration-300 delay-50">
                         <div class="w-48 h-48 bg-gradient-to-t from-purple-700 to-transparent to-80% opacity-75 brightness-50 hover:opacity-100 hover:brightness-100 transition ease-in-out duration-300 delay-50 drop-shadow-2xl">
-                            <div class="w-full h-full bg-cover bg-[url('media/Ariunbayar.png')]"></div>
+                            <div class="w-full h-full bg-cover bg-[url('students/media/Ariunbayar.png')]"></div>
                         </div>
-                        <a href="student.html">
+                        <a href="ariunbayar.html">
                             <button class="w-28 h-12 border-2 border-slate-700 rounded-xl bg-gradient-to-tl from-purple-800 to-blue-800 text-transparent bg-clip-text hover:text-white hover:bg-clip-content hover:border-white transition ease-in-out duration-300">Дэлгэрэнгүй</button>
                         </a>
                     </div>
                 </div>
                 <!--Anar-->
                 <div class="inline-block px-4 scroll-ml-0 snap-start">
-                    <div class="w-64 h-72 border-[2px] border-slate-700 rounded-3xl flex flex-col justify-around items-center hover:border-slate-400 transition ease-in-out duration-300 delay-50">
+                    <div class="w-64 h-72 border-[2px] border-slate-700 rounded-3xl flex flex-col justify-around items-center hover:bg-white/[0.05] hover:border-slate-400 transition ease-in-out duration-300 delay-50">
                         <div class="w-48 h-48 bg-gradient-to-t from-purple-700 to-transparent to-80% opacity-75 brightness-50 hover:opacity-100 hover:brightness-100 transition ease-in-out duration-300 delay-50 drop-shadow-2xl">
-                            <div class="w-full h-full bg-cover bg-[url('media/Anar.png')]"></div>
+                            <div class="w-full h-full bg-cover bg-[url('students/media/Anar.png')]"></div>
                         </div>
                         <a href="student.html">
                             <button class="w-28 h-12 border-2 border-slate-700 rounded-xl bg-gradient-to-tl from-purple-800 to-blue-800 text-transparent bg-clip-text hover:text-white hover:bg-clip-content hover:border-white transition ease-in-out duration-300">Дэлгэрэнгүй</button>
@@ -73,9 +84,9 @@
                 </div>
                 <!--Badraa-->
                 <div class="inline-block px-4 scroll-ml-0 snap-start">
-                    <div class="w-64 h-72 border-[2px] border-slate-700 rounded-3xl flex flex-col justify-around items-center hover:border-slate-400 transition ease-in-out duration-300 delay-50">
+                    <div class="w-64 h-72 border-[2px] border-slate-700 rounded-3xl flex flex-col justify-around items-center hover:bg-white/[0.05] hover:border-slate-400 transition ease-in-out duration-300 delay-50">
                         <div class="w-48 h-48 bg-gradient-to-t from-purple-700 to-transparent to-80% opacity-75 brightness-50 hover:opacity-100 hover:brightness-100 transition ease-in-out duration-300 delay-50 drop-shadow-2xl">
-                            <div class="w-full h-full bg-cover bg-center bg-[url('media/Badraa.png')]"></div>
+                            <div class="w-full h-full bg-cover bg-center bg-[url('students/media/Badraa.png')]"></div>
                         </div>
                         <a href="student.html">
                             <button class="w-28 h-12 border-2 border-slate-700 rounded-xl bg-gradient-to-tl from-purple-800 to-blue-800 text-transparent bg-clip-text hover:text-white hover:bg-clip-content hover:border-white transition ease-in-out duration-300">Дэлгэрэнгүй</button>
@@ -84,9 +95,9 @@
                 </div>
                 <!--Siilen-->
                 <div class="inline-block px-4 scroll-ml-0 snap-start">
-                    <div class="w-64 h-72 border-[2px] border-slate-700 rounded-3xl flex flex-col justify-around items-center hover:border-slate-400 transition ease-in-out duration-300 delay-50">
+                    <div class="w-64 h-72 border-[2px] border-slate-700 rounded-3xl flex flex-col justify-around items-center hover:bg-white/[0.05] hover:border-slate-400 transition ease-in-out duration-300 delay-50">
                         <div class="w-48 h-48 bg-gradient-to-t from-purple-700 to-transparent to-80% opacity-75 brightness-50 hover:opacity-100 hover:brightness-100 transition ease-in-out duration-300 delay-50 drop-shadow-2xl">
-                            <div class="w-full h-full bg-cover -rotate-90 bg-center bg-[url('media/Siilen.png')]"></div>
+                            <div class="w-full h-full bg-cover -rotate-90 bg-center bg-[url('students/media/Siilen.png')]"></div>
                         </div>
                         <a href="student.html">
                             <button class="w-28 h-12 border-2 border-slate-700 rounded-xl bg-gradient-to-tl from-purple-800 to-blue-800 text-transparent bg-clip-text hover:text-white hover:bg-clip-content hover:border-white transition ease-in-out duration-300">Дэлгэрэнгүй</button>
@@ -95,9 +106,9 @@
                 </div>
                 <!--Gunbilig-->
                 <div class="inline-block px-4 scroll-ml-0 snap-start">
-                    <div class="w-64 h-72 border-[2px] border-slate-700 rounded-3xl flex flex-col justify-around items-center hover:border-slate-400 transition ease-in-out duration-300 delay-50">
+                    <div class="w-64 h-72 border-[2px] border-slate-700 rounded-3xl flex flex-col justify-around items-center hover:bg-white/[0.05] hover:border-slate-400 transition ease-in-out duration-300 delay-50">
                         <div class="w-48 h-48 bg-gradient-to-t from-purple-700 to-transparent to-80% opacity-75 brightness-50 hover:opacity-100 hover:brightness-100 transition ease-in-out duration-300 delay-50 drop-shadow-2xl">
-                            <div class="w-full h-full bg-cover bg-center bg-[url('media/Gunbilig.png')]"></div>
+                            <div class="w-full h-full bg-cover bg-center bg-[url('students/media/Gunbilig.png')]"></div>
                         </div>
                         <a href="student.html">
                             <button class="w-28 h-12 border-2 border-slate-700 rounded-xl bg-gradient-to-tl from-purple-800 to-blue-800 text-transparent bg-clip-text hover:text-white hover:bg-clip-content hover:border-white transition ease-in-out duration-300">Дэлгэрэнгүй</button>
@@ -106,9 +117,9 @@
                 </div>
                 <!--Emily-->
                 <div class="inline-block px-4 scroll-ml-0 snap-start">
-                    <div class="w-64 h-72 border-[2px] border-slate-700 rounded-3xl flex flex-col justify-around items-center hover:border-slate-400 transition ease-in-out duration-300 delay-50">
+                    <div class="w-64 h-72 border-[2px] border-slate-700 rounded-3xl flex flex-col justify-around items-center hover:bg-white/[0.05] hover:border-slate-400 transition ease-in-out duration-300 delay-50">
                         <div class="w-48 h-48 bg-gradient-to-t from-purple-700 to-transparent to-80% opacity-75 brightness-50 hover:opacity-100 hover:brightness-100 transition ease-in-out duration-300 delay-50 drop-shadow-2xl">
-                            <div class="w-full h-full bg-cover scale-75 -rotate-90 bg-center bg-[url('media/Emily.png')] mt-6"></div>
+                            <div class="w-full h-full bg-cover scale-75 -rotate-90 bg-center bg-[url('students/media/Emily.png')] mt-6"></div>
                         </div>
                         <a href="student.html">
                             <button class="w-28 h-12 border-2 border-slate-700 rounded-xl bg-gradient-to-tl from-purple-800 to-blue-800 text-transparent bg-clip-text hover:text-white hover:bg-clip-content hover:border-white transition ease-in-out duration-300">Дэлгэрэнгүй</button>
@@ -117,9 +128,9 @@
                 </div>
                 <!--Ujin-->
                 <div class="inline-block px-4 scroll-ml-0 snap-start">
-                    <div class="w-64 h-72 border-[2px] border-slate-700 rounded-3xl flex flex-col justify-around items-center hover:border-slate-400 transition ease-in-out duration-300 delay-50">
+                    <div class="w-64 h-72 border-[2px] border-slate-700 rounded-3xl flex flex-col justify-around items-center hover:bg-white/[0.05] hover:border-slate-400 transition ease-in-out duration-300 delay-50">
                         <div class="w-48 h-48 bg-gradient-to-t from-purple-700 to-transparent to-80% opacity-75 brightness-50 hover:opacity-100 hover:brightness-100 transition ease-in-out duration-300 delay-50 drop-shadow-2xl">
-                            <div class="w-full h-full bg-cover bg-center bg-[url('media/Ujin.png')]"></div>
+                            <div class="w-full h-full bg-cover bg-center bg-[url('students/media/Ujin.png')]"></div>
                         </div>
                         <a href="student.html">
                             <button class="w-28 h-12 border-2 border-slate-700 rounded-xl bg-gradient-to-tl from-purple-800 to-blue-800 text-transparent bg-clip-text hover:text-white hover:bg-clip-content hover:border-white transition ease-in-out duration-300">Дэлгэрэнгүй</button>
@@ -128,9 +139,9 @@
                 </div>
                 <!--Munkhnaran-->
                 <div class="inline-block px-4 scroll-ml-0 snap-start">
-                    <div class="w-64 h-72 border-[2px] border-slate-700 rounded-3xl flex flex-col justify-around items-center hover:border-slate-400 transition ease-in-out duration-300 delay-50">
+                    <div class="w-64 h-72 border-[2px] border-slate-700 rounded-3xl flex flex-col justify-around items-center hover:bg-white/[0.05] hover:border-slate-400 transition ease-in-out duration-300 delay-50">
                         <div class="w-48 h-48 bg-gradient-to-t from-purple-700 to-transparent to-80% opacity-75 brightness-50 hover:opacity-100 hover:brightness-100 transition ease-in-out duration-300 delay-50 drop-shadow-2xl">
-                            <div class="w-full h-full bg-cover bg-center bg-[url('media/Munkhnaran.png')]"></div>
+                            <div class="w-full h-full bg-cover bg-center bg-[url('students/media/Munkhnaran.png')]"></div>
                         </div>
                         <a href="student.html">
                             <button class="w-28 h-12 border-2 border-slate-700 rounded-xl bg-gradient-to-tl from-purple-800 to-blue-800 text-transparent bg-clip-text hover:text-white hover:bg-clip-content hover:border-white transition ease-in-out duration-300">Дэлгэрэнгүй</button>
@@ -139,9 +150,9 @@
                 </div>
                 <!--Chinbilegt-->
                 <div class="inline-block px-4 scroll-ml-0 snap-start">
-                    <div class="w-64 h-72 border-[2px] border-slate-700 rounded-3xl flex flex-col justify-around items-center hover:border-slate-400 transition ease-in-out duration-300 delay-50">
+                    <div class="w-64 h-72 border-[2px] border-slate-700 rounded-3xl flex flex-col justify-around items-center hover:bg-white/[0.05] hover:border-slate-400 transition ease-in-out duration-300 delay-50">
                         <div class="w-48 h-48 bg-gradient-to-t from-purple-700 to-transparent to-80% opacity-75 brightness-50 hover:opacity-100 hover:brightness-100 transition ease-in-out duration-300 delay-50 drop-shadow-2xl">
-                            <div class="w-full h-full bg-cover bg-center bg-[url('media/Chinbilegt.png')]"></div>
+                            <div class="w-full h-full bg-cover bg-center bg-[url('students/media/Chinbilegt.png')]"></div>
                         </div>
                         <a href="student.html">
                             <button class="w-28 h-12 border-2 border-slate-700 rounded-xl bg-gradient-to-tl from-purple-800 to-blue-800 text-transparent bg-clip-text hover:text-white hover:bg-clip-content hover:border-white transition ease-in-out duration-300">Дэлгэрэнгүй</button>
@@ -150,9 +161,9 @@
                 </div>
                 <!--Khangarid-->
                 <div class="inline-block px-4 scroll-ml-0 snap-start">
-                    <div class="w-64 h-72 border-[2px] border-slate-700 rounded-3xl flex flex-col justify-around items-center hover:border-slate-400 transition ease-in-out duration-300 delay-50">
+                    <div class="w-64 h-72 border-[2px] border-slate-700 rounded-3xl flex flex-col justify-around items-center hover:bg-white/[0.05] hover:border-slate-400 transition ease-in-out duration-300 delay-50">
                         <div class="w-48 h-48 bg-gradient-to-t from-purple-700 to-transparent to-80% opacity-75 brightness-50 hover:opacity-100 hover:brightness-100 transition ease-in-out duration-300 delay-50 drop-shadow-2xl">
-                            <div class="w-full h-full bg-cover bg-bottom bg-[url('media/Khangarid.png')]"></div>
+                            <div class="w-full h-full bg-cover bg-bottom bg-[url('students/media/Khangarid.png')]"></div>
                         </div>
                         <a href="student.html">
                             <button class="w-28 h-12 border-2 border-slate-700 rounded-xl bg-gradient-to-tl from-purple-800 to-blue-800 text-transparent bg-clip-text hover:text-white hover:bg-clip-content hover:border-white transition ease-in-out duration-300">Дэлгэрэнгүй</button>
@@ -163,9 +174,9 @@
             <div class="w-11/12 h-[60%] flex sticky overflow-x-scroll mt-10 hide-scroll-bar snap-x">
                 <!--Tuvshin-->
                 <div class="inline-block px-4 scroll-ml-0 snap-start">
-                    <div class="w-64 h-72 border-[2px] border-slate-700 rounded-3xl flex flex-col justify-around items-center hover:border-slate-400 transition ease-in-out duration-300 delay-50">
+                    <div class="w-64 h-72 border-[2px] border-slate-700 rounded-3xl flex flex-col justify-around items-center hover:bg-white/[0.05] hover:border-slate-400 transition ease-in-out duration-300 delay-50">
                         <div class="w-48 h-48 bg-gradient-to-t from-purple-700 to-transparent to-80% opacity-75 brightness-50 hover:opacity-100 hover:brightness-100 transition ease-in-out duration-300 delay-50 drop-shadow-2xl">
-                            <div class="w-full h-full bg-cover bg-[url('media/Tuvshin.png')]"></div>
+                            <div class="w-full h-full bg-cover bg-[url('students/media/Tuvshin.png')]"></div>
                         </div>
                         <a href="student.html">
                             <button class="w-28 h-12 border-2 border-slate-700 rounded-xl bg-gradient-to-tl from-purple-800 to-blue-800 text-transparent bg-clip-text hover:text-white hover:bg-clip-content hover:border-white transition ease-in-out duration-300">Дэлгэрэнгүй</button>
@@ -174,9 +185,9 @@
                 </div>
                 <!--Temuulen-->
                 <div class="inline-block px-4 scroll-ml-0 snap-start">
-                    <div class="w-64 h-72 border-[2px] border-slate-700 rounded-3xl flex flex-col justify-around items-center hover:border-slate-400 transition ease-in-out duration-300 delay-50">
+                    <div class="w-64 h-72 border-[2px] border-slate-700 rounded-3xl flex flex-col justify-around items-center hover:bg-white/[0.05] hover:border-slate-400 transition ease-in-out duration-300 delay-50">
                         <div class="w-48 h-48 bg-gradient-to-t from-purple-700 to-transparent to-80% opacity-75 brightness-50 hover:opacity-100 hover:brightness-100 transition ease-in-out duration-300 delay-50 drop-shadow-2xl">
-                            <div class="w-full h-full bg-cover bg-[url('media/Temuulen.png')]"></div>
+                            <div class="w-full h-full bg-cover bg-[url('students/media/Temuulen.png')]"></div>
                         </div>
                         <a href="student.html">
                             <button class="w-28 h-12 border-2 border-slate-700 rounded-xl bg-gradient-to-tl from-purple-800 to-blue-800 text-transparent bg-clip-text hover:text-white hover:bg-clip-content hover:border-white transition ease-in-out duration-300">Дэлгэрэнгүй</button>
@@ -185,9 +196,9 @@
                 </div>
                 <!--Erdenebold-->
                 <div class="inline-block px-4 scroll-ml-0 snap-start">
-                    <div class="w-64 h-72 border-[2px] border-slate-700 rounded-3xl flex flex-col justify-around items-center hover:border-slate-400 transition ease-in-out duration-300 delay-50">
+                    <div class="w-64 h-72 border-[2px] border-slate-700 rounded-3xl flex flex-col justify-around items-center hover:bg-white/[0.05] hover:border-slate-400 transition ease-in-out duration-300 delay-50">
                         <div class="w-48 h-48 bg-gradient-to-t from-purple-700 to-transparent to-80% opacity-75 brightness-50 hover:opacity-100 hover:brightness-100 transition ease-in-out duration-300 delay-50 drop-shadow-2xl">
-                            <div class="w-full h-full bg-cover bg-[url('media/Erdenebold.jpg')]"></div>
+                            <div class="w-full h-full bg-cover bg-[url('students/media/Erdenebold.jpg')]"></div>
                         </div>
                         <a href="student.html">
                             <button class="w-28 h-12 border-2 border-slate-700 rounded-xl bg-gradient-to-tl from-purple-800 to-blue-800 text-transparent bg-clip-text hover:text-white hover:bg-clip-content hover:border-white transition ease-in-out duration-300">Дэлгэрэнгүй</button>
@@ -196,9 +207,9 @@
                 </div>
                 <!--Jargal-->
                 <div class="inline-block px-4 scroll-ml-0 snap-start">
-                    <div class="w-64 h-72 border-[2px] border-slate-700 rounded-3xl flex flex-col justify-around items-center hover:border-slate-400 transition ease-in-out duration-300 delay-50">
+                    <div class="w-64 h-72 border-[2px] border-slate-700 rounded-3xl flex flex-col justify-around items-center hover:bg-white/[0.05] hover:border-slate-400 transition ease-in-out duration-300 delay-50">
                         <div class="w-48 h-48 bg-gradient-to-t from-purple-700 to-transparent to-80% opacity-75 brightness-50 hover:opacity-100 hover:brightness-100 transition ease-in-out duration-300 delay-50 drop-shadow-2xl">
-                            <div class="w-full h-full bg-cover bg-[url('media/Jargal.png')]"></div>
+                            <div class="w-full h-full bg-cover bg-[url('students/media/Jargal.png')]"></div>
                         </div>
                         <a href="student.html">
                             <button class="w-28 h-12 border-2 border-slate-700 rounded-xl bg-gradient-to-tl from-purple-800 to-blue-800 text-transparent bg-clip-text hover:text-white hover:bg-clip-content hover:border-white transition ease-in-out duration-300">Дэлгэрэнгүй</button>
@@ -207,9 +218,9 @@
                 </div>
                 <!--Munkhbayasgalan-->
                 <div class="inline-block px-4 scroll-ml-0 snap-start">
-                    <div class="w-64 h-72 border-[2px] border-slate-700 rounded-3xl flex flex-col justify-around items-center hover:border-slate-400 transition ease-in-out duration-300 delay-50">
+                    <div class="w-64 h-72 border-[2px] border-slate-700 rounded-3xl flex flex-col justify-around items-center hover:bg-white/[0.05] hover:border-slate-400 transition ease-in-out duration-300 delay-50">
                         <div class="w-48 h-48 bg-gradient-to-t from-purple-700 to-transparent to-80% opacity-75 brightness-50 hover:opacity-100 hover:brightness-100 transition ease-in-out duration-300 delay-50 drop-shadow-2xl">
-                            <div class="w-full h-full bg-cover bg-[url('media/Munkhbayasgalan.png')]"></div>
+                            <div class="w-full h-full bg-cover bg-[url('students/media/Munkhbayasgalan.png')]"></div>
                         </div>
                         <a href="student.html">
                             <button class="w-28 h-12 border-2 border-slate-700 rounded-xl bg-gradient-to-tl from-purple-800 to-blue-800 text-transparent bg-clip-text hover:text-white hover:bg-clip-content hover:border-white transition ease-in-out duration-300">Дэлгэрэнгүй</button>
@@ -218,9 +229,9 @@
                 </div>
                 <!--Enkhmend-->
                 <div class="inline-block px-4 scroll-ml-0 snap-start">
-                    <div class="w-64 h-72 border-[2px] border-slate-700 rounded-3xl flex flex-col justify-around items-center hover:border-slate-400 transition ease-in-out duration-300 delay-50">
+                    <div class="w-64 h-72 border-[2px] border-slate-700 rounded-3xl flex flex-col justify-around items-center hover:bg-white/[0.05] hover:border-slate-400 transition ease-in-out duration-300 delay-50">
                         <div class="w-48 h-48 bg-gradient-to-t from-purple-700 to-transparent to-80% opacity-75 brightness-50 hover:opacity-100 hover:brightness-100 transition ease-in-out duration-300 delay-50 drop-shadow-2xl">
-                            <div class="w-full h-full bg-cover bg-[url('media/Enkhmend.png')]"></div>
+                            <div class="w-full h-full bg-cover bg-[url('students/media/Enkhmend.png')]"></div>
                         </div>
                         <a href="student.html">
                             <button class="w-28 h-12 border-2 border-slate-700 rounded-xl bg-gradient-to-tl from-purple-800 to-blue-800 text-transparent bg-clip-text hover:text-white hover:bg-clip-content hover:border-white transition ease-in-out duration-300">Дэлгэрэнгүй</button>
@@ -265,7 +276,19 @@
         <section class="bg-sky-950 w-screen h-48 flex justify-center items-end">
             <p class="text-5xl font-bold bg-gradient-to-b from-white to-transparent bg-clip-text text-transparent uppercase select-none" id="achievements">амжилтууд</p>
         </section>
-        <section class="bg-sky-950 w-screen h-screen grid grid-cols-3 grid-rows-2 gap-10 px-20 pt-20">
+        <section class="bg-sky-950 w-screen h-screen md:grid grid-cols-3 grid-rows-2 gap-10 px-20 pt-20 hidden">
+            <div class="w-full h-full rounded-xl bg-center opacity-75 brightness-50 transition ease-in-out delay-50 duration-300 hover:opacity-100 hover:brightness-100 bg-[url('https://images.unsplash.com/photo-1597655601841-214a4cfe8b2c?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bW91bnRhaW4lMjBzY2VuZXJ5fGVufDB8fDB8fHww')] col-span-2"></div>
+            <div class="w-full h-full rounded-xl bg-sky-900 flex flex-col justify-around items-center">
+                <p class="text-2xl bg-gradient-to-br from-slate-400 to-slate-600 bg-clip-text text-transparent">"2024 оны тэмцээн"</p>
+                <p class="text-slate-200 text-lg font-thin px-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+            <div class="w-full h-full rounded-xl bg-sky-900 flex flex-col justify-around items-center">
+                <p class="text-2xl bg-gradient-to-br from-slate-400 to-slate-600 bg-clip-text text-transparent">"2023 оны тэмцээн"</p>
+                <p class="text-slate-200 text-lg font-thin px-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+            <div class="w-full h-full rounded-xl bg-cover opacity-75 brightness-50 transition ease-in-out delay-50 duration-300 hover:opacity-100 hover:brightness-100 bg-[url('https://i.pinimg.com/originals/78/34/df/7834df02451f1f377a3bf9ac6d5f217b.jpg')] col-span-2"></div>
+        </section>
+        <section class="bg-sky-950 w-screen h-screen md:grid grid-cols-3 grid-rows-2 gap-10 px-20 pt-20 hidden md:block">
             <div class="w-full h-full rounded-xl bg-center opacity-75 brightness-50 transition ease-in-out delay-50 duration-300 hover:opacity-100 hover:brightness-100 bg-[url('https://images.unsplash.com/photo-1597655601841-214a4cfe8b2c?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bW91bnRhaW4lMjBzY2VuZXJ5fGVufDB8fDB8fHww')] col-span-2"></div>
             <div class="w-full h-full rounded-xl bg-sky-900 flex flex-col justify-around items-center">
                 <p class="text-2xl bg-gradient-to-br from-slate-400 to-slate-600 bg-clip-text text-transparent">"2024 оны тэмцээн"</p>
@@ -277,17 +300,19 @@
             </div>
             <div class="w-full h-full rounded-xl bg-cover opacity-75 brightness-50 transition ease-in-out delay-50 duration-300 hover:opacity-100 hover:brightness-100     bg-[url('https://i.pinimg.com/originals/78/34/df/7834df02451f1f377a3bf9ac6d5f217b.jpg')] col-span-2"></div>
         </section>
-        <section class="bg-sky-950 w-screen h-screen grid grid-cols-3 grid-rows-2 gap-10 px-20 pt-20">
-            <div class="w-full h-full rounded-xl bg-center opacity-75 brightness-50 transition ease-in-out delay-50 duration-300 hover:opacity-100 hover:brightness-100 bg-[url('https://images.unsplash.com/photo-1597655601841-214a4cfe8b2c?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bW91bnRhaW4lMjBzY2VuZXJ5fGVufDB8fDB8fHww')] col-span-2"></div>
-            <div class="w-full h-full rounded-xl bg-sky-900 flex flex-col justify-around items-center">
-                <p class="text-2xl bg-gradient-to-br from-slate-400 to-slate-600 bg-clip-text text-transparent">"2024 оны тэмцээн"</p>
-                <p class="text-slate-200 text-lg font-thin px-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <section class="w-screen h-screen bg-gradient-to-b from-sky-950 to-teal-950 flex flex-col justify-evenly items-center">
+            <div class="w-11/12 h-2/5 bg-white bg-cover rounded-3xl bg-[url('https://images.unsplash.com/photo-1597655601841-214a4cfe8b2c?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bW91bnRhaW4lMjBzY2VuZXJ5fGVufDB8fDB8fHww')]"></div>
+            <div class="w-11/12 h-1/3 bg-sky-900 bg-cover rounded-3xl text-slate-200 text-lg font-extralight flex flex-col justify-evenly items-center px-4">
+                <p class="font-light text-2xl bg-gradient-to-br from-slate-400 to-slate-600 bg-clip-text text-transparent">2024 оны тэмцээн</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
             </div>
-            <div class="w-full h-full rounded-xl bg-sky-900 flex flex-col justify-around items-center">
-                <p class="text-2xl bg-gradient-to-br from-slate-400 to-slate-600 bg-clip-text text-transparent">"2023 оны тэмцээн"</p>
-                <p class="text-slate-200 text-lg font-thin px-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </section>
+        <section class="w-screen h-screen bg-gradient-to-b from-sky-950 to-teal-950 flex flex-col justify-evenly items-center">
+            <div class="w-11/12 h-2/5 bg-white bg-cover rounded-3xl bg-[url('https://i.pinimg.com/originals/78/34/df/7834df02451f1f377a3bf9ac6d5f217b.jpg')]"></div>
+            <div class="w-11/12 h-1/3 bg-sky-900 bg-cover rounded-3xl text-slate-200 text-lg font-extralight flex flex-col justify-evenly items-center px-4">
+                <p class="font-light text-2xl bg-gradient-to-br from-slate-400 to-slate-600 bg-clip-text text-transparent">2024 оны тэмцээн</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
             </div>
-            <div class="w-full h-full rounded-xl bg-cover opacity-75 brightness-50 transition ease-in-out delay-50 duration-300 hover:opacity-100 hover:brightness-100     bg-[url('https://i.pinimg.com/originals/78/34/df/7834df02451f1f377a3bf9ac6d5f217b.jpg')] col-span-2"></div>
         </section>
     </main>
     <!-- hide-scroll-bar -->
@@ -300,6 +325,21 @@
         .hide-scroll-bar::-webkit-scrollbar {
           display: none;
         }
-        </style>
+    </style>
+    <!--JS for mobile menu-->
+    <script>
+        let open = 0;
+        document.getElementById("dropdown").style.display = "none";
+        document.getElementById("hmbrgr").addEventListener("click", function(){
+            if(open == 0){
+                document.getElementById("dropdown").style.display = "flex";
+                open--;
+            }
+            else{
+                document.getElementById("dropdown").style.display = "none";
+                open++;
+            }
+        })
+    </script>
 </body>
 </html>
