@@ -51,7 +51,7 @@
         </section>
         <!--text-->
         <section class="bg-blue-950 w-screen h-72">
-            <p class="px-12 md:px-40 pt-20 text-white text-lg md:text-2xl font-light text-slate-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p class="px-12 md:px-40 pt-20 text-white text-md md:text-2xl font-light text-slate-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         </section>
         <!--students-->
         <section class="bg-blue-950 w-screen h-48 flex justify-center items-end z-0">
@@ -62,7 +62,7 @@
             <div class="w-11/12 h-[60%] flex sticky overflow-x-scroll mt-20 hide-scroll-bar snap-x">
                 <!--Ariunbayar-->
                 <div class="inline-block px-4 scroll-ml-0 snap-start">
-                    <div class="w-64 h-72 border-[2px] border-slate-700 rounded-3xl flex flex-col justify-around items-center hover:bg-white/[0.05] hover:bg-white/[0.05] hover:border-slate-400 transition ease-in-out duration-300 delay-50">
+                    <div class="w-64 h-72 border-[2px] border-slate-700 rounded-3xl flex flex-col justify-around items-center active:bg-white/[0.05] hover:bg-white/[0.05] hover:border-slate-400 transition ease-in-out duration-300 delay-50">
                         <div class="w-48 h-48 bg-gradient-to-t from-purple-700 to-transparent to-80% opacity-75 brightness-50 hover:opacity-100 hover:brightness-100 transition ease-in-out duration-300 delay-50 drop-shadow-2xl">
                             <div class="w-full h-full bg-cover bg-[url('students/media/Ariunbayar.png')]"></div>
                         </div>
@@ -219,8 +219,8 @@
                 <!--Munkhbayasgalan-->
                 <div class="inline-block px-4 scroll-ml-0 snap-start">
                     <div class="w-64 h-72 border-[2px] border-slate-700 rounded-3xl flex flex-col justify-around items-center hover:bg-white/[0.05] hover:border-slate-400 transition ease-in-out duration-300 delay-50">
-                        <div class="w-48 h-48 bg-gradient-to-t from-purple-700 to-transparent to-80% opacity-75 brightness-50 hover:opacity-100 hover:brightness-100 transition ease-in-out duration-300 delay-50 drop-shadow-2xl">
-                            <div class="w-full h-full bg-cover bg-[url('students/media/Munkhbayasgalan.png')]"></div>
+                        <div class="w-48 h-48 bg-gradient-to-t from-purple-700 to-transparent to-80% opacity-75 brightness-50 hover:opacity-100 hover:brightness-100 transition ease-in-out duration-300 delay-50 drop-shadow-2xl relative">
+                            <div class="w-full h-32 absolute bottom-0 bg-cover bg-center bg-[url('students/media/Munkhbayasgalan.png')]"></div>
                         </div>
                         <a href="student.html">
                             <button class="w-28 h-12 border-2 border-slate-700 rounded-xl bg-gradient-to-tl from-purple-800 to-blue-800 text-transparent bg-clip-text hover:text-white hover:bg-clip-content hover:border-white transition ease-in-out duration-300">Дэлгэрэнгүй</button>
@@ -272,10 +272,11 @@
                 </div>
             </div>
         </section>
-        <!--achievments-->
+        <!--achievements header-->
         <section class="bg-sky-950 w-screen h-48 flex justify-center items-end">
             <p class="text-5xl font-bold bg-gradient-to-b from-white to-transparent bg-clip-text text-transparent uppercase select-none" id="achievements">амжилтууд</p>
         </section>
+        <!--achievements-->
         <section class="bg-sky-950 w-screen h-screen md:grid grid-cols-3 grid-rows-2 gap-10 px-20 pt-20 hidden">
             <div class="w-full h-full rounded-xl bg-center opacity-75 brightness-50 transition ease-in-out delay-50 duration-300 hover:opacity-100 hover:brightness-100 bg-[url('https://images.unsplash.com/photo-1597655601841-214a4cfe8b2c?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bW91bnRhaW4lMjBzY2VuZXJ5fGVufDB8fDB8fHww')] col-span-2"></div>
             <div class="w-full h-full rounded-xl bg-sky-900 flex flex-col justify-around items-center">
@@ -300,17 +301,18 @@
             </div>
             <div class="w-full h-full rounded-xl bg-cover opacity-75 brightness-50 transition ease-in-out delay-50 duration-300 hover:opacity-100 hover:brightness-100     bg-[url('https://i.pinimg.com/originals/78/34/df/7834df02451f1f377a3bf9ac6d5f217b.jpg')] col-span-2"></div>
         </section>
-        <section class="w-screen h-screen bg-gradient-to-b from-sky-950 to-teal-950 flex flex-col justify-evenly items-center">
+        <!--mobile achievements-->
+        <section class="w-screen h-screen bg-gradient-to-b from-sky-950 to-indigo-950 flex flex-col justify-evenly items-center md:hidden">
             <div class="w-11/12 h-2/5 bg-white bg-cover rounded-3xl bg-[url('https://images.unsplash.com/photo-1597655601841-214a4cfe8b2c?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bW91bnRhaW4lMjBzY2VuZXJ5fGVufDB8fDB8fHww')]"></div>
-            <div class="w-11/12 h-1/3 bg-sky-900 bg-cover rounded-3xl text-slate-200 text-lg font-extralight flex flex-col justify-evenly items-center px-4">
-                <p class="font-light text-2xl bg-gradient-to-br from-slate-400 to-slate-600 bg-clip-text text-transparent">2024 оны тэмцээн</p>
+            <div class="w-11/12 h-1/3 bg-indigo-900 drop-shadow-2xl bg-cover rounded-3xl text-slate-200 text-lg font-extralight flex flex-col justify-evenly items-center px-4">
+                <p class="font-normal text-2xl bg-gradient-to-br from-slate-400 to-slate-600 bg-clip-text text-transparent">2024 оны тэмцээн</p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
             </div>
         </section>
-        <section class="w-screen h-screen bg-gradient-to-b from-sky-950 to-teal-950 flex flex-col justify-evenly items-center">
+        <section class="w-screen h-screen bg-indigo-950 flex flex-col justify-evenly items-center md:hidden">
             <div class="w-11/12 h-2/5 bg-white bg-cover rounded-3xl bg-[url('https://i.pinimg.com/originals/78/34/df/7834df02451f1f377a3bf9ac6d5f217b.jpg')]"></div>
-            <div class="w-11/12 h-1/3 bg-sky-900 bg-cover rounded-3xl text-slate-200 text-lg font-extralight flex flex-col justify-evenly items-center px-4">
-                <p class="font-light text-2xl bg-gradient-to-br from-slate-400 to-slate-600 bg-clip-text text-transparent">2024 оны тэмцээн</p>
+            <div class="w-11/12 h-1/3 bg-indigo-900 drop-shadow-2xl bg-cover rounded-3xl text-slate-200 text-lg font-extralight flex flex-col justify-evenly items-center px-4">
+                <p class="font-normal text-2xl bg-gradient-to-br from-slate-400 to-slate-600 bg-clip-text text-transparent">2024 оны тэмцээн</p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
             </div>
         </section>
